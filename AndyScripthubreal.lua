@@ -15556,10 +15556,8 @@ end)
 -- MAIN
 local Main = Window:NewTab("2026")
 local MainSection = Main:NewSection("Main")
-MainSection:NewButton("Eclipse Hub", "For mm2 and wtv", function()
-    getgenv().mainKey = "nil"
-
-local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https\58//api.eclipsehub.xyz/auth";c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
+MainSection:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.F, function()
+	Library:ToggleUI()
 end)
 
 MainSection:NewButton("Basic Fling gui and tp", "Good script", function()
