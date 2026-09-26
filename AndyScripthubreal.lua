@@ -15556,7 +15556,7 @@ end)
 -- MAIN
 local Main = Window:NewTab("2026")
 local MainSection = Main:NewSection("Main")
-MainSection:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.F, function()
+MainSection:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.LeftAlt, function()
 	Library:ToggleUI()
 end)
 
