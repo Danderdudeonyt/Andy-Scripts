@@ -15713,3 +15713,9 @@ local p = game:GetService("Players").LocalPlayer
 
 ts:TeleportToPlaceInstance(game.PlaceId, game.JobId, p)
 end)
+
+MainSection:NewButton("Server Hop", "For hopping", function()
+    local module = loadstring(game:HttpGet"https://raw.githubusercontent.com/LeoKholYt/roblox/main/lk_serverhop.lua")()
+
+module:Teleport(game.PlaceId)
+end)
